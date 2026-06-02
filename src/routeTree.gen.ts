@@ -18,6 +18,9 @@ import { Route as AdminincomyLeadsRouteImport } from './routes/adminincomy/leads
 import { Route as AdminincomyHeroRouteImport } from './routes/adminincomy/hero'
 import { Route as AdminincomyDashboardRouteImport } from './routes/adminincomy/dashboard'
 import { Route as AdminincomyLayoutRouteImport } from './routes/adminincomy/_layout'
+import { Route as EduProfessorRouteRouteImport } from './routes/edu/professor/route'
+import { Route as EduCoordenadorRouteRouteImport } from './routes/edu/coordenador/route'
+import { Route as EduAlunoRouteRouteImport } from './routes/edu/aluno/route'
 import { Route as EduProfessorIndexRouteImport } from './routes/edu/professor/index'
 import { Route as EduCoordenadorIndexRouteImport } from './routes/edu/coordenador/index'
 import { Route as EduAlunoIndexRouteImport } from './routes/edu/aluno/index'
@@ -87,154 +90,166 @@ const AdminincomyLayoutRoute = AdminincomyLayoutRouteImport.update({
   id: '/_layout',
   getParentRoute: () => AdminincomyRouteRoute,
 } as any)
-const EduProfessorIndexRoute = EduProfessorIndexRouteImport.update({
-  id: '/edu/professor/',
-  path: '/edu/professor/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduCoordenadorIndexRoute = EduCoordenadorIndexRouteImport.update({
-  id: '/edu/coordenador/',
-  path: '/edu/coordenador/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduAlunoIndexRoute = EduAlunoIndexRouteImport.update({
-  id: '/edu/aluno/',
-  path: '/edu/aluno/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduProfessorTurmasRoute = EduProfessorTurmasRouteImport.update({
-  id: '/edu/professor/turmas',
-  path: '/edu/professor/turmas',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduProfessorRastreamentoRoute =
-  EduProfessorRastreamentoRouteImport.update({
-    id: '/edu/professor/rastreamento',
-    path: '/edu/professor/rastreamento',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const EduProfessorNotasRoute = EduProfessorNotasRouteImport.update({
-  id: '/edu/professor/notas',
-  path: '/edu/professor/notas',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduProfessorEadRoute = EduProfessorEadRouteImport.update({
-  id: '/edu/professor/ead',
-  path: '/edu/professor/ead',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduProfessorComunicadosRoute = EduProfessorComunicadosRouteImport.update({
-  id: '/edu/professor/comunicados',
-  path: '/edu/professor/comunicados',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduProfessorChamadaRoute = EduProfessorChamadaRouteImport.update({
-  id: '/edu/professor/chamada',
-  path: '/edu/professor/chamada',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduProfessorAtividadesRoute = EduProfessorAtividadesRouteImport.update({
-  id: '/edu/professor/atividades',
-  path: '/edu/professor/atividades',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduProfessorLayoutRoute = EduProfessorLayoutRouteImport.update({
-  id: '/edu/professor/_layout',
+const EduProfessorRouteRoute = EduProfessorRouteRouteImport.update({
+  id: '/edu/professor',
   path: '/edu/professor',
   getParentRoute: () => rootRouteImport,
 } as any)
-const EduCoordenadorTurmasRoute = EduCoordenadorTurmasRouteImport.update({
-  id: '/edu/coordenador/turmas',
-  path: '/edu/coordenador/turmas',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduCoordenadorRelatoriosRoute =
-  EduCoordenadorRelatoriosRouteImport.update({
-    id: '/edu/coordenador/relatorios',
-    path: '/edu/coordenador/relatorios',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const EduCoordenadorProfessoresRoute =
-  EduCoordenadorProfessoresRouteImport.update({
-    id: '/edu/coordenador/professores',
-    path: '/edu/coordenador/professores',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const EduCoordenadorHorariosRoute = EduCoordenadorHorariosRouteImport.update({
-  id: '/edu/coordenador/horarios',
-  path: '/edu/coordenador/horarios',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduCoordenadorConfiguracoesRoute =
-  EduCoordenadorConfiguracoesRouteImport.update({
-    id: '/edu/coordenador/configuracoes',
-    path: '/edu/coordenador/configuracoes',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const EduCoordenadorLayoutRoute = EduCoordenadorLayoutRouteImport.update({
-  id: '/edu/coordenador/_layout',
+const EduCoordenadorRouteRoute = EduCoordenadorRouteRouteImport.update({
+  id: '/edu/coordenador',
   path: '/edu/coordenador',
   getParentRoute: () => rootRouteImport,
 } as any)
-const EduAlunoNotificacoesRoute = EduAlunoNotificacoesRouteImport.update({
-  id: '/edu/aluno/notificacoes',
-  path: '/edu/aluno/notificacoes',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduAlunoFrequenciaRoute = EduAlunoFrequenciaRouteImport.update({
-  id: '/edu/aluno/frequencia',
-  path: '/edu/aluno/frequencia',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduAlunoEadRoute = EduAlunoEadRouteImport.update({
-  id: '/edu/aluno/ead',
-  path: '/edu/aluno/ead',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduAlunoBoletimRoute = EduAlunoBoletimRouteImport.update({
-  id: '/edu/aluno/boletim',
-  path: '/edu/aluno/boletim',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduAlunoAtividadesRoute = EduAlunoAtividadesRouteImport.update({
-  id: '/edu/aluno/atividades',
-  path: '/edu/aluno/atividades',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduAlunoAgendaRoute = EduAlunoAgendaRouteImport.update({
-  id: '/edu/aluno/agenda',
-  path: '/edu/aluno/agenda',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EduAlunoLayoutRoute = EduAlunoLayoutRouteImport.update({
-  id: '/edu/aluno/_layout',
+const EduAlunoRouteRoute = EduAlunoRouteRouteImport.update({
+  id: '/edu/aluno',
   path: '/edu/aluno',
   getParentRoute: () => rootRouteImport,
+} as any)
+const EduProfessorIndexRoute = EduProfessorIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => EduProfessorRouteRoute,
+} as any)
+const EduCoordenadorIndexRoute = EduCoordenadorIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => EduCoordenadorRouteRoute,
+} as any)
+const EduAlunoIndexRoute = EduAlunoIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => EduAlunoRouteRoute,
+} as any)
+const EduProfessorTurmasRoute = EduProfessorTurmasRouteImport.update({
+  id: '/turmas',
+  path: '/turmas',
+  getParentRoute: () => EduProfessorRouteRoute,
+} as any)
+const EduProfessorRastreamentoRoute =
+  EduProfessorRastreamentoRouteImport.update({
+    id: '/rastreamento',
+    path: '/rastreamento',
+    getParentRoute: () => EduProfessorRouteRoute,
+  } as any)
+const EduProfessorNotasRoute = EduProfessorNotasRouteImport.update({
+  id: '/notas',
+  path: '/notas',
+  getParentRoute: () => EduProfessorRouteRoute,
+} as any)
+const EduProfessorEadRoute = EduProfessorEadRouteImport.update({
+  id: '/ead',
+  path: '/ead',
+  getParentRoute: () => EduProfessorRouteRoute,
+} as any)
+const EduProfessorComunicadosRoute = EduProfessorComunicadosRouteImport.update({
+  id: '/comunicados',
+  path: '/comunicados',
+  getParentRoute: () => EduProfessorRouteRoute,
+} as any)
+const EduProfessorChamadaRoute = EduProfessorChamadaRouteImport.update({
+  id: '/chamada',
+  path: '/chamada',
+  getParentRoute: () => EduProfessorRouteRoute,
+} as any)
+const EduProfessorAtividadesRoute = EduProfessorAtividadesRouteImport.update({
+  id: '/atividades',
+  path: '/atividades',
+  getParentRoute: () => EduProfessorRouteRoute,
+} as any)
+const EduProfessorLayoutRoute = EduProfessorLayoutRouteImport.update({
+  id: '/_layout',
+  getParentRoute: () => EduProfessorRouteRoute,
+} as any)
+const EduCoordenadorTurmasRoute = EduCoordenadorTurmasRouteImport.update({
+  id: '/turmas',
+  path: '/turmas',
+  getParentRoute: () => EduCoordenadorRouteRoute,
+} as any)
+const EduCoordenadorRelatoriosRoute =
+  EduCoordenadorRelatoriosRouteImport.update({
+    id: '/relatorios',
+    path: '/relatorios',
+    getParentRoute: () => EduCoordenadorRouteRoute,
+  } as any)
+const EduCoordenadorProfessoresRoute =
+  EduCoordenadorProfessoresRouteImport.update({
+    id: '/professores',
+    path: '/professores',
+    getParentRoute: () => EduCoordenadorRouteRoute,
+  } as any)
+const EduCoordenadorHorariosRoute = EduCoordenadorHorariosRouteImport.update({
+  id: '/horarios',
+  path: '/horarios',
+  getParentRoute: () => EduCoordenadorRouteRoute,
+} as any)
+const EduCoordenadorConfiguracoesRoute =
+  EduCoordenadorConfiguracoesRouteImport.update({
+    id: '/configuracoes',
+    path: '/configuracoes',
+    getParentRoute: () => EduCoordenadorRouteRoute,
+  } as any)
+const EduCoordenadorLayoutRoute = EduCoordenadorLayoutRouteImport.update({
+  id: '/_layout',
+  getParentRoute: () => EduCoordenadorRouteRoute,
+} as any)
+const EduAlunoNotificacoesRoute = EduAlunoNotificacoesRouteImport.update({
+  id: '/notificacoes',
+  path: '/notificacoes',
+  getParentRoute: () => EduAlunoRouteRoute,
+} as any)
+const EduAlunoFrequenciaRoute = EduAlunoFrequenciaRouteImport.update({
+  id: '/frequencia',
+  path: '/frequencia',
+  getParentRoute: () => EduAlunoRouteRoute,
+} as any)
+const EduAlunoEadRoute = EduAlunoEadRouteImport.update({
+  id: '/ead',
+  path: '/ead',
+  getParentRoute: () => EduAlunoRouteRoute,
+} as any)
+const EduAlunoBoletimRoute = EduAlunoBoletimRouteImport.update({
+  id: '/boletim',
+  path: '/boletim',
+  getParentRoute: () => EduAlunoRouteRoute,
+} as any)
+const EduAlunoAtividadesRoute = EduAlunoAtividadesRouteImport.update({
+  id: '/atividades',
+  path: '/atividades',
+  getParentRoute: () => EduAlunoRouteRoute,
+} as any)
+const EduAlunoAgendaRoute = EduAlunoAgendaRouteImport.update({
+  id: '/agenda',
+  path: '/agenda',
+  getParentRoute: () => EduAlunoRouteRoute,
+} as any)
+const EduAlunoLayoutRoute = EduAlunoLayoutRouteImport.update({
+  id: '/_layout',
+  getParentRoute: () => EduAlunoRouteRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/adminincomy': typeof AdminincomyRouteRouteWithChildren
+  '/edu/aluno': typeof EduAlunoRouteRouteWithChildren
+  '/edu/coordenador': typeof EduCoordenadorRouteRouteWithChildren
+  '/edu/professor': typeof EduProfessorRouteRouteWithChildren
   '/adminincomy/dashboard': typeof AdminincomyDashboardRoute
   '/adminincomy/hero': typeof AdminincomyHeroRoute
   '/adminincomy/leads': typeof AdminincomyLeadsRoute
   '/adminincomy/login': typeof AdminincomyLoginRoute
   '/edu/login': typeof EduLoginRoute
   '/edu/': typeof EduIndexRoute
-  '/edu/aluno': typeof EduAlunoLayoutRoute
   '/edu/aluno/agenda': typeof EduAlunoAgendaRoute
   '/edu/aluno/atividades': typeof EduAlunoAtividadesRoute
   '/edu/aluno/boletim': typeof EduAlunoBoletimRoute
   '/edu/aluno/ead': typeof EduAlunoEadRoute
   '/edu/aluno/frequencia': typeof EduAlunoFrequenciaRoute
   '/edu/aluno/notificacoes': typeof EduAlunoNotificacoesRoute
-  '/edu/coordenador': typeof EduCoordenadorLayoutRoute
   '/edu/coordenador/configuracoes': typeof EduCoordenadorConfiguracoesRoute
   '/edu/coordenador/horarios': typeof EduCoordenadorHorariosRoute
   '/edu/coordenador/professores': typeof EduCoordenadorProfessoresRoute
   '/edu/coordenador/relatorios': typeof EduCoordenadorRelatoriosRoute
   '/edu/coordenador/turmas': typeof EduCoordenadorTurmasRoute
-  '/edu/professor': typeof EduProfessorLayoutRoute
   '/edu/professor/atividades': typeof EduProfessorAtividadesRoute
   '/edu/professor/chamada': typeof EduProfessorChamadaRoute
   '/edu/professor/comunicados': typeof EduProfessorComunicadosRoute
@@ -281,6 +296,9 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/adminincomy': typeof AdminincomyRouteRouteWithChildren
+  '/edu/aluno': typeof EduAlunoRouteRouteWithChildren
+  '/edu/coordenador': typeof EduCoordenadorRouteRouteWithChildren
+  '/edu/professor': typeof EduProfessorRouteRouteWithChildren
   '/adminincomy/_layout': typeof AdminincomyLayoutRoute
   '/adminincomy/dashboard': typeof AdminincomyDashboardRoute
   '/adminincomy/hero': typeof AdminincomyHeroRoute
@@ -318,26 +336,26 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/adminincomy'
+    | '/edu/aluno'
+    | '/edu/coordenador'
+    | '/edu/professor'
     | '/adminincomy/dashboard'
     | '/adminincomy/hero'
     | '/adminincomy/leads'
     | '/adminincomy/login'
     | '/edu/login'
     | '/edu/'
-    | '/edu/aluno'
     | '/edu/aluno/agenda'
     | '/edu/aluno/atividades'
     | '/edu/aluno/boletim'
     | '/edu/aluno/ead'
     | '/edu/aluno/frequencia'
     | '/edu/aluno/notificacoes'
-    | '/edu/coordenador'
     | '/edu/coordenador/configuracoes'
     | '/edu/coordenador/horarios'
     | '/edu/coordenador/professores'
     | '/edu/coordenador/relatorios'
     | '/edu/coordenador/turmas'
-    | '/edu/professor'
     | '/edu/professor/atividades'
     | '/edu/professor/chamada'
     | '/edu/professor/comunicados'
@@ -383,6 +401,9 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/adminincomy'
+    | '/edu/aluno'
+    | '/edu/coordenador'
+    | '/edu/professor'
     | '/adminincomy/_layout'
     | '/adminincomy/dashboard'
     | '/adminincomy/hero'
@@ -419,32 +440,11 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AdminincomyRouteRoute: typeof AdminincomyRouteRouteWithChildren
+  EduAlunoRouteRoute: typeof EduAlunoRouteRouteWithChildren
+  EduCoordenadorRouteRoute: typeof EduCoordenadorRouteRouteWithChildren
+  EduProfessorRouteRoute: typeof EduProfessorRouteRouteWithChildren
   EduLoginRoute: typeof EduLoginRoute
   EduIndexRoute: typeof EduIndexRoute
-  EduAlunoLayoutRoute: typeof EduAlunoLayoutRoute
-  EduAlunoAgendaRoute: typeof EduAlunoAgendaRoute
-  EduAlunoAtividadesRoute: typeof EduAlunoAtividadesRoute
-  EduAlunoBoletimRoute: typeof EduAlunoBoletimRoute
-  EduAlunoEadRoute: typeof EduAlunoEadRoute
-  EduAlunoFrequenciaRoute: typeof EduAlunoFrequenciaRoute
-  EduAlunoNotificacoesRoute: typeof EduAlunoNotificacoesRoute
-  EduCoordenadorLayoutRoute: typeof EduCoordenadorLayoutRoute
-  EduCoordenadorConfiguracoesRoute: typeof EduCoordenadorConfiguracoesRoute
-  EduCoordenadorHorariosRoute: typeof EduCoordenadorHorariosRoute
-  EduCoordenadorProfessoresRoute: typeof EduCoordenadorProfessoresRoute
-  EduCoordenadorRelatoriosRoute: typeof EduCoordenadorRelatoriosRoute
-  EduCoordenadorTurmasRoute: typeof EduCoordenadorTurmasRoute
-  EduProfessorLayoutRoute: typeof EduProfessorLayoutRoute
-  EduProfessorAtividadesRoute: typeof EduProfessorAtividadesRoute
-  EduProfessorChamadaRoute: typeof EduProfessorChamadaRoute
-  EduProfessorComunicadosRoute: typeof EduProfessorComunicadosRoute
-  EduProfessorEadRoute: typeof EduProfessorEadRoute
-  EduProfessorNotasRoute: typeof EduProfessorNotasRoute
-  EduProfessorRastreamentoRoute: typeof EduProfessorRastreamentoRoute
-  EduProfessorTurmasRoute: typeof EduProfessorTurmasRoute
-  EduAlunoIndexRoute: typeof EduAlunoIndexRoute
-  EduCoordenadorIndexRoute: typeof EduCoordenadorIndexRoute
-  EduProfessorIndexRoute: typeof EduProfessorIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -512,173 +512,194 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminincomyLayoutRouteImport
       parentRoute: typeof AdminincomyRouteRoute
     }
+    '/edu/professor': {
+      id: '/edu/professor'
+      path: '/edu/professor'
+      fullPath: '/edu/professor'
+      preLoaderRoute: typeof EduProfessorRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/edu/coordenador': {
+      id: '/edu/coordenador'
+      path: '/edu/coordenador'
+      fullPath: '/edu/coordenador'
+      preLoaderRoute: typeof EduCoordenadorRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/edu/aluno': {
+      id: '/edu/aluno'
+      path: '/edu/aluno'
+      fullPath: '/edu/aluno'
+      preLoaderRoute: typeof EduAlunoRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/edu/professor/': {
       id: '/edu/professor/'
-      path: '/edu/professor'
+      path: '/'
       fullPath: '/edu/professor/'
       preLoaderRoute: typeof EduProfessorIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduProfessorRouteRoute
     }
     '/edu/coordenador/': {
       id: '/edu/coordenador/'
-      path: '/edu/coordenador'
+      path: '/'
       fullPath: '/edu/coordenador/'
       preLoaderRoute: typeof EduCoordenadorIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduCoordenadorRouteRoute
     }
     '/edu/aluno/': {
       id: '/edu/aluno/'
-      path: '/edu/aluno'
+      path: '/'
       fullPath: '/edu/aluno/'
       preLoaderRoute: typeof EduAlunoIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduAlunoRouteRoute
     }
     '/edu/professor/turmas': {
       id: '/edu/professor/turmas'
-      path: '/edu/professor/turmas'
+      path: '/turmas'
       fullPath: '/edu/professor/turmas'
       preLoaderRoute: typeof EduProfessorTurmasRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduProfessorRouteRoute
     }
     '/edu/professor/rastreamento': {
       id: '/edu/professor/rastreamento'
-      path: '/edu/professor/rastreamento'
+      path: '/rastreamento'
       fullPath: '/edu/professor/rastreamento'
       preLoaderRoute: typeof EduProfessorRastreamentoRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduProfessorRouteRoute
     }
     '/edu/professor/notas': {
       id: '/edu/professor/notas'
-      path: '/edu/professor/notas'
+      path: '/notas'
       fullPath: '/edu/professor/notas'
       preLoaderRoute: typeof EduProfessorNotasRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduProfessorRouteRoute
     }
     '/edu/professor/ead': {
       id: '/edu/professor/ead'
-      path: '/edu/professor/ead'
+      path: '/ead'
       fullPath: '/edu/professor/ead'
       preLoaderRoute: typeof EduProfessorEadRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduProfessorRouteRoute
     }
     '/edu/professor/comunicados': {
       id: '/edu/professor/comunicados'
-      path: '/edu/professor/comunicados'
+      path: '/comunicados'
       fullPath: '/edu/professor/comunicados'
       preLoaderRoute: typeof EduProfessorComunicadosRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduProfessorRouteRoute
     }
     '/edu/professor/chamada': {
       id: '/edu/professor/chamada'
-      path: '/edu/professor/chamada'
+      path: '/chamada'
       fullPath: '/edu/professor/chamada'
       preLoaderRoute: typeof EduProfessorChamadaRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduProfessorRouteRoute
     }
     '/edu/professor/atividades': {
       id: '/edu/professor/atividades'
-      path: '/edu/professor/atividades'
+      path: '/atividades'
       fullPath: '/edu/professor/atividades'
       preLoaderRoute: typeof EduProfessorAtividadesRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduProfessorRouteRoute
     }
     '/edu/professor/_layout': {
       id: '/edu/professor/_layout'
-      path: '/edu/professor'
+      path: ''
       fullPath: '/edu/professor'
       preLoaderRoute: typeof EduProfessorLayoutRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduProfessorRouteRoute
     }
     '/edu/coordenador/turmas': {
       id: '/edu/coordenador/turmas'
-      path: '/edu/coordenador/turmas'
+      path: '/turmas'
       fullPath: '/edu/coordenador/turmas'
       preLoaderRoute: typeof EduCoordenadorTurmasRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduCoordenadorRouteRoute
     }
     '/edu/coordenador/relatorios': {
       id: '/edu/coordenador/relatorios'
-      path: '/edu/coordenador/relatorios'
+      path: '/relatorios'
       fullPath: '/edu/coordenador/relatorios'
       preLoaderRoute: typeof EduCoordenadorRelatoriosRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduCoordenadorRouteRoute
     }
     '/edu/coordenador/professores': {
       id: '/edu/coordenador/professores'
-      path: '/edu/coordenador/professores'
+      path: '/professores'
       fullPath: '/edu/coordenador/professores'
       preLoaderRoute: typeof EduCoordenadorProfessoresRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduCoordenadorRouteRoute
     }
     '/edu/coordenador/horarios': {
       id: '/edu/coordenador/horarios'
-      path: '/edu/coordenador/horarios'
+      path: '/horarios'
       fullPath: '/edu/coordenador/horarios'
       preLoaderRoute: typeof EduCoordenadorHorariosRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduCoordenadorRouteRoute
     }
     '/edu/coordenador/configuracoes': {
       id: '/edu/coordenador/configuracoes'
-      path: '/edu/coordenador/configuracoes'
+      path: '/configuracoes'
       fullPath: '/edu/coordenador/configuracoes'
       preLoaderRoute: typeof EduCoordenadorConfiguracoesRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduCoordenadorRouteRoute
     }
     '/edu/coordenador/_layout': {
       id: '/edu/coordenador/_layout'
-      path: '/edu/coordenador'
+      path: ''
       fullPath: '/edu/coordenador'
       preLoaderRoute: typeof EduCoordenadorLayoutRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduCoordenadorRouteRoute
     }
     '/edu/aluno/notificacoes': {
       id: '/edu/aluno/notificacoes'
-      path: '/edu/aluno/notificacoes'
+      path: '/notificacoes'
       fullPath: '/edu/aluno/notificacoes'
       preLoaderRoute: typeof EduAlunoNotificacoesRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduAlunoRouteRoute
     }
     '/edu/aluno/frequencia': {
       id: '/edu/aluno/frequencia'
-      path: '/edu/aluno/frequencia'
+      path: '/frequencia'
       fullPath: '/edu/aluno/frequencia'
       preLoaderRoute: typeof EduAlunoFrequenciaRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduAlunoRouteRoute
     }
     '/edu/aluno/ead': {
       id: '/edu/aluno/ead'
-      path: '/edu/aluno/ead'
+      path: '/ead'
       fullPath: '/edu/aluno/ead'
       preLoaderRoute: typeof EduAlunoEadRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduAlunoRouteRoute
     }
     '/edu/aluno/boletim': {
       id: '/edu/aluno/boletim'
-      path: '/edu/aluno/boletim'
+      path: '/boletim'
       fullPath: '/edu/aluno/boletim'
       preLoaderRoute: typeof EduAlunoBoletimRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduAlunoRouteRoute
     }
     '/edu/aluno/atividades': {
       id: '/edu/aluno/atividades'
-      path: '/edu/aluno/atividades'
+      path: '/atividades'
       fullPath: '/edu/aluno/atividades'
       preLoaderRoute: typeof EduAlunoAtividadesRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduAlunoRouteRoute
     }
     '/edu/aluno/agenda': {
       id: '/edu/aluno/agenda'
-      path: '/edu/aluno/agenda'
+      path: '/agenda'
       fullPath: '/edu/aluno/agenda'
       preLoaderRoute: typeof EduAlunoAgendaRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduAlunoRouteRoute
     }
     '/edu/aluno/_layout': {
       id: '/edu/aluno/_layout'
-      path: '/edu/aluno'
+      path: ''
       fullPath: '/edu/aluno'
       preLoaderRoute: typeof EduAlunoLayoutRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof EduAlunoRouteRoute
     }
   }
 }
@@ -702,11 +723,18 @@ const AdminincomyRouteRouteChildren: AdminincomyRouteRouteChildren = {
 const AdminincomyRouteRouteWithChildren =
   AdminincomyRouteRoute._addFileChildren(AdminincomyRouteRouteChildren)
 
-const rootRouteChildren: RootRouteChildren = {
-  IndexRoute: IndexRoute,
-  AdminincomyRouteRoute: AdminincomyRouteRouteWithChildren,
-  EduLoginRoute: EduLoginRoute,
-  EduIndexRoute: EduIndexRoute,
+interface EduAlunoRouteRouteChildren {
+  EduAlunoLayoutRoute: typeof EduAlunoLayoutRoute
+  EduAlunoAgendaRoute: typeof EduAlunoAgendaRoute
+  EduAlunoAtividadesRoute: typeof EduAlunoAtividadesRoute
+  EduAlunoBoletimRoute: typeof EduAlunoBoletimRoute
+  EduAlunoEadRoute: typeof EduAlunoEadRoute
+  EduAlunoFrequenciaRoute: typeof EduAlunoFrequenciaRoute
+  EduAlunoNotificacoesRoute: typeof EduAlunoNotificacoesRoute
+  EduAlunoIndexRoute: typeof EduAlunoIndexRoute
+}
+
+const EduAlunoRouteRouteChildren: EduAlunoRouteRouteChildren = {
   EduAlunoLayoutRoute: EduAlunoLayoutRoute,
   EduAlunoAgendaRoute: EduAlunoAgendaRoute,
   EduAlunoAtividadesRoute: EduAlunoAtividadesRoute,
@@ -714,12 +742,49 @@ const rootRouteChildren: RootRouteChildren = {
   EduAlunoEadRoute: EduAlunoEadRoute,
   EduAlunoFrequenciaRoute: EduAlunoFrequenciaRoute,
   EduAlunoNotificacoesRoute: EduAlunoNotificacoesRoute,
+  EduAlunoIndexRoute: EduAlunoIndexRoute,
+}
+
+const EduAlunoRouteRouteWithChildren = EduAlunoRouteRoute._addFileChildren(
+  EduAlunoRouteRouteChildren,
+)
+
+interface EduCoordenadorRouteRouteChildren {
+  EduCoordenadorLayoutRoute: typeof EduCoordenadorLayoutRoute
+  EduCoordenadorConfiguracoesRoute: typeof EduCoordenadorConfiguracoesRoute
+  EduCoordenadorHorariosRoute: typeof EduCoordenadorHorariosRoute
+  EduCoordenadorProfessoresRoute: typeof EduCoordenadorProfessoresRoute
+  EduCoordenadorRelatoriosRoute: typeof EduCoordenadorRelatoriosRoute
+  EduCoordenadorTurmasRoute: typeof EduCoordenadorTurmasRoute
+  EduCoordenadorIndexRoute: typeof EduCoordenadorIndexRoute
+}
+
+const EduCoordenadorRouteRouteChildren: EduCoordenadorRouteRouteChildren = {
   EduCoordenadorLayoutRoute: EduCoordenadorLayoutRoute,
   EduCoordenadorConfiguracoesRoute: EduCoordenadorConfiguracoesRoute,
   EduCoordenadorHorariosRoute: EduCoordenadorHorariosRoute,
   EduCoordenadorProfessoresRoute: EduCoordenadorProfessoresRoute,
   EduCoordenadorRelatoriosRoute: EduCoordenadorRelatoriosRoute,
   EduCoordenadorTurmasRoute: EduCoordenadorTurmasRoute,
+  EduCoordenadorIndexRoute: EduCoordenadorIndexRoute,
+}
+
+const EduCoordenadorRouteRouteWithChildren =
+  EduCoordenadorRouteRoute._addFileChildren(EduCoordenadorRouteRouteChildren)
+
+interface EduProfessorRouteRouteChildren {
+  EduProfessorLayoutRoute: typeof EduProfessorLayoutRoute
+  EduProfessorAtividadesRoute: typeof EduProfessorAtividadesRoute
+  EduProfessorChamadaRoute: typeof EduProfessorChamadaRoute
+  EduProfessorComunicadosRoute: typeof EduProfessorComunicadosRoute
+  EduProfessorEadRoute: typeof EduProfessorEadRoute
+  EduProfessorNotasRoute: typeof EduProfessorNotasRoute
+  EduProfessorRastreamentoRoute: typeof EduProfessorRastreamentoRoute
+  EduProfessorTurmasRoute: typeof EduProfessorTurmasRoute
+  EduProfessorIndexRoute: typeof EduProfessorIndexRoute
+}
+
+const EduProfessorRouteRouteChildren: EduProfessorRouteRouteChildren = {
   EduProfessorLayoutRoute: EduProfessorLayoutRoute,
   EduProfessorAtividadesRoute: EduProfessorAtividadesRoute,
   EduProfessorChamadaRoute: EduProfessorChamadaRoute,
@@ -728,9 +793,20 @@ const rootRouteChildren: RootRouteChildren = {
   EduProfessorNotasRoute: EduProfessorNotasRoute,
   EduProfessorRastreamentoRoute: EduProfessorRastreamentoRoute,
   EduProfessorTurmasRoute: EduProfessorTurmasRoute,
-  EduAlunoIndexRoute: EduAlunoIndexRoute,
-  EduCoordenadorIndexRoute: EduCoordenadorIndexRoute,
   EduProfessorIndexRoute: EduProfessorIndexRoute,
+}
+
+const EduProfessorRouteRouteWithChildren =
+  EduProfessorRouteRoute._addFileChildren(EduProfessorRouteRouteChildren)
+
+const rootRouteChildren: RootRouteChildren = {
+  IndexRoute: IndexRoute,
+  AdminincomyRouteRoute: AdminincomyRouteRouteWithChildren,
+  EduAlunoRouteRoute: EduAlunoRouteRouteWithChildren,
+  EduCoordenadorRouteRoute: EduCoordenadorRouteRouteWithChildren,
+  EduProfessorRouteRoute: EduProfessorRouteRouteWithChildren,
+  EduLoginRoute: EduLoginRoute,
+  EduIndexRoute: EduIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
